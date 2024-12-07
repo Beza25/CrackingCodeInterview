@@ -1,17 +1,15 @@
 fun count( charArray: CharArray, trueLength: Int): Int {
     var count = 0
-    for( i in 0..trueLength - 1 ){
+    for( i in 0 until trueLength){
         if( charArray[i] == ' '){
             count += 1
         }
     }
     return count
-
 }
-fun urlify( charArray: CharArray, trueLength: Int): CharArray{
+fun URLify( charArray: CharArray, trueLength: Int): CharArray{
 
     var newIndex = trueLength - 1 + count(charArray, trueLength) * 2
-    val oldIndex = trueLength - 1
 
     for (i in trueLength - 1 downTo 0) {
         if (charArray[i] == ' ') {
@@ -26,9 +24,6 @@ fun urlify( charArray: CharArray, trueLength: Int): CharArray{
             newIndex--
         }
     }
-
-
-
     return charArray
 }
 
