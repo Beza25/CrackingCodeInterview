@@ -5,6 +5,8 @@ fun main(args: Array<String>) {
 
 //    println(URLify("Mr John Smith     ".toCharArray(), 13).concatToString())
 //    println(isPalindromePermutation("tact coa"))
-    println( oneWay("pakee","pale"))
+//    println( oneWay("pakee","pale"))
+    println(stringCompression("aabccccccaaa"))
+
 }
 
